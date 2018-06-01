@@ -3,7 +3,7 @@
     Site: https://andrearivadossi.github.io
     Contact: riva.andrea.web [at] gmail.com
     Twitter: @theandreariva
-    From: Italy Australia
+    From: Italy
 
 /* THANKS */
     Github: https://pages.github.com/
