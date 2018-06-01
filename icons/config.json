@@ -53,6 +53,24 @@
       "css": "rebel",
       "code": 61904,
       "src": "fontawesome"
+    },
+    {
+      "uid": "884cfc3e6e2d456dd2a2ca0dbb9e6337",
+      "css": "arrow-left",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "arrow-right",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "72b1277834cba5b7944b0a6cac7ddb0d",
+      "css": "feed",
+      "code": 61598,
+      "src": "fontawesome"
     }
   ]
 }
