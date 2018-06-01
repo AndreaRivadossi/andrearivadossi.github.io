@@ -35,6 +35,24 @@
       "css": "linkedin",
       "code": 61665,
       "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b8d0c7d76e87b94882329a88e8e43d3d",
+      "css": "google-plus",
+      "code": 61653,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c53415fbd2695033bd7180d7a9ed4934",
+      "css": "rebel",
+      "code": 61904,
+      "src": "fontawesome"
     }
   ]
 }
