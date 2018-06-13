@@ -1,6 +1,6 @@
 /* TEAM */
     Me: Andrea Rivadossi
-    Site: https://andrearivadossi.github.io
+    Site: https://andrearivadossi.it
     Contact: riva.andrea.web [at] gmail.com
     Twitter: @theandreariva
     From: Italy
