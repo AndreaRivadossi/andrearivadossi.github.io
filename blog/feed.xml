@@ -3,10 +3,10 @@
   <channel>
     <title>Andrea Rivadossi</title>
     <description>Magento Front-End Developer</description>
-    <link>https://andrearivadossi.it/blog/</link>
-    <atom:link href="https://andrearivadossi.it/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Apr 2021 12:53:28 +0200</pubDate>
-    <lastBuildDate>Wed, 21 Apr 2021 12:53:28 +0200</lastBuildDate>
+    <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/</link>
+    <atom:link href="https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 21 Apr 2021 12:54:58 +0200</pubDate>
+    <lastBuildDate>Wed, 21 Apr 2021 12:54:58 +0200</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -35,8 +35,8 @@
 &lt;p&gt;Infine, ricordatevi di lanciare un &lt;code class=&quot;highlighter-rouge&quot;&gt;setup:upgrade&lt;/code&gt; e di pulire le cache in caso non vedeste le modifiche.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Oct 2018 00:00:00 +0200</pubDate>
-        <link>https://andrearivadossi.it/blog/magento2/magento-2-aggiungere-una-classe-css-al-body-via-xml.html</link>
-        <guid isPermaLink="true">https://andrearivadossi.it/blog/magento2/magento-2-aggiungere-una-classe-css-al-body-via-xml.html</guid>
+        <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/magento2/magento-2-aggiungere-una-classe-css-al-body-via-xml.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/magento2/magento-2-aggiungere-una-classe-css-al-body-via-xml.html</guid>
         
         <category>Magento2</category>
         
@@ -77,8 +77,8 @@
 
 </description>
         <pubDate>Wed, 06 Jun 2018 00:00:00 +0200</pubDate>
-        <link>https://andrearivadossi.it/blog/magento2/magento-2-aggiungere-un-blocco-cms-nel-layout-o-in-una-pagina-cms.html</link>
-        <guid isPermaLink="true">https://andrearivadossi.it/blog/magento2/magento-2-aggiungere-un-blocco-cms-nel-layout-o-in-una-pagina-cms.html</guid>
+        <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/magento2/magento-2-aggiungere-un-blocco-cms-nel-layout-o-in-una-pagina-cms.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/magento2/magento-2-aggiungere-un-blocco-cms-nel-layout-o-in-una-pagina-cms.html</guid>
         
         <category>cms</category>
         
@@ -127,8 +127,8 @@
 &lt;p&gt;Dopo aver completato questi step è possibile richiamare il nostro blocco CMS nel frontend.&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
-        <link>https://andrearivadossi.it/blog/magento2/magento-2-come-creare-un-blocco-cms.html</link>
-        <guid isPermaLink="true">https://andrearivadossi.it/blog/magento2/magento-2-come-creare-un-blocco-cms.html</guid>
+        <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/magento2/magento-2-come-creare-un-blocco-cms.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/magento2/magento-2-come-creare-un-blocco-cms.html</guid>
         
         <category>front-end</category>
         
