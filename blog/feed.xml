@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrea Rivadossi</title>
+    <description>Magento Front-End Developer</description>
+    <link>https://andrearivadossi.it/blog//</link>
+    <atom:link href="https://andrearivadossi.it/blog//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 21 Apr 2021 11:59:51 +0200</pubDate>
+    <lastBuildDate>Wed, 21 Apr 2021 11:59:51 +0200</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Aggiungere una classe CSS al body</title>
+        <description>&lt;p&gt;Per aggiungere una classe CSS custom al body, basta inserire questo codice nel file di layout XML della specifica pagina o area a cui si vuole aggiungere. In questo modo:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/f03eba32d0fc8454c2c1b2897c8d6bca.js?file=your_layout.xml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Ricordatevi di estendere il file necessario, ricreando file e path all’interno del proprio tema custom. Non modificate i file di core, al primo aggiornamento della piattaforma andreste a perdere la modifica.&lt;/p&gt;
+
+&lt;p&gt;Si può vedere un esempio di come assegnare una classe CSS al body all’interno del file nel core di Magento 2 &lt;code class=&quot;highlighter-rouge&quot;&gt;customer_account.xml&lt;/code&gt;, che si trova a questo percorso &lt;code class=&quot;highlighter-rouge&quot;&gt;/vendor/magento/module-customer/view/frontend/layout/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/f03eba32d0fc8454c2c1b2897c8d6bca.js?file=customer_account.xml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Poterbbe capitarvi di dover aggiungere una classe CSS al body di una specifica Pagina CMS, a logica penserete, bene, aggiungo lo stesso codice qui sopra nel Layout Update XML come avrei fatto su Magento 1, invece no, in questo caso il metodo indicato qui sopra non funzionerà, provato con la versione 2.2.4 e non funzionava.&lt;/p&gt;
+
+&lt;p&gt;Non ho capito perché in questo caso le istruzioni utilizzate nei file di layout XML non funzionino, ma ho cercato di aggirare il problema assegnando la classe CSS di cui avevo bisogno al primo elemento disponibile che racchiuda tutta la struttura. Nello specifico mi sono aggrappato al container root, estendendolo e assegnandogli un tag html e la classe di cui avevo bisogno. In questo modo:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/f03eba32d0fc8454c2c1b2897c8d6bca.js?file=Layout-Update-XML.xml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Nell’esempio qui sopra potete vedere che con l’attributo &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlTag=&quot;div&quot;&lt;/code&gt; trasformo l’elemento in un div, con l’attributo &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlClass=&quot;my-custom-css-class&quot;&lt;/code&gt; gli assegno le classi di cui ho bisogno e, opzionale, posso assegnare un id con questo attributo &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlId=&quot;my-custom-css-id&quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Infine, ricordatevi di lanciare un &lt;code class=&quot;highlighter-rouge&quot;&gt;setup:upgrade&lt;/code&gt; e di pulire le cache in caso non vedeste le modifiche.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Oct 2018 00:00:00 +0200</pubDate>
+        <link>https://andrearivadossi.it/blog//magento2/magento-2-aggiungere-una-classe-css-al-body-via-xml.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/blog//magento2/magento-2-aggiungere-una-classe-css-al-body-via-xml.html</guid>
+        
+        <category>Magento2</category>
+        
+        <category>cms</category>
+        
+        <category>front-end</category>
+        
+        <category>layout</category>
+        
+        <category>xml</category>
+        
+        
+        <category>Magento2</category>
+        
+      </item>
+    
+      <item>
+        <title>Aggiungere un blocco CMS nel layout o in una pagina CMS</title>
+        <description>&lt;p&gt;Dopo aver creato il nostro blocco CMS nel back-office (Clicca qui per sapere come creare un blocco CMS), per stamparlo nel layout del tema o nel modulo bisogna aggiungere questo codice nel file .xml relativo all’area in cui si vuole posizionare il blocco:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/21ad5e467f469837fefacdeced4d674f.js?file=default.xml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Successivamente bisogna aggiungere questo codice nel file .phtml nella posizione in cui vogliamo che venga stampato il blocco:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/21ad5e467f469837fefacdeced4d674f.js?file=file.phtml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;In alternariva si può utilizzare questo metodo più veloce per stampare direttamente il blocco CMS nel file .phtml, saltando la parte di inserimento nel file .xml:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/21ad5e467f469837fefacdeced4d674f.js?file=alternative_file.phtml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Se invece si volesse includere questo blocco CMS all’interno di una pagina CMS esiste un altro metodo, la sintassi è simile:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/21ad5e467f469837fefacdeced4d674f.js?file=cms_block&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 06 Jun 2018 00:00:00 +0200</pubDate>
+        <link>https://andrearivadossi.it/blog//magento2/magento-2-aggiungere-un-blocco-cms-nel-layout-o-in-una-pagina-cms.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/blog//magento2/magento-2-aggiungere-un-blocco-cms-nel-layout-o-in-una-pagina-cms.html</guid>
+        
+        <category>cms</category>
+        
+        <category>front-end</category>
+        
+        <category>layout</category>
+        
+        <category>xml</category>
+        
+        <category>Magento2</category>
+        
+        
+        <category>Magento2</category>
+        
+      </item>
+    
+      <item>
+        <title>Come creare un blocco CMS</title>
+        <description>&lt;p&gt;Per creare un nuovo blocco CMS bisogna accedere al Pannello di Amministrazione del proprio sito (Ovviamente :P), poi cliccare su &lt;strong&gt;Content&lt;/strong&gt; &amp;gt; &lt;strong&gt;Blocks&lt;/strong&gt; utilizzando la barra di navigazione sulla sinistra e arriverete a vedere la lista dei vostri blocchi CMS.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/magento2-come-creare-un-blocco-cms-01.jpg&quot; alt=&quot;Sidebar Magento 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Da questa lista avrete una panoramica di tutti i vostri blocchi CMS e si possono compiere delle azioni veloci come ad esempio:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Abilitare o disabilitare un blocco CMS.&lt;/li&gt;
+  &lt;li&gt;Cambiare il nome o l’identificativo del blocco.&lt;/li&gt;
+  &lt;li&gt;Eliminare massivamente i blocchi applicando la spunta nella relativa checkbox dei blocchi che si vogliono eliminare.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/magento2-come-creare-un-blocco-cms-02.jpg&quot; alt=&quot;Lista blocchi CMS Magento 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok, ora, visto che siamo qui per creare un nuovo blocco CMS cliccate su &lt;strong&gt;Add New Block&lt;/strong&gt; in alto a destra.&lt;/p&gt;
+
+&lt;p&gt;Nella pagina che vi si aprirà compilate i seguenti campi e infine cliccate su &lt;strong&gt;Save Block&lt;/strong&gt; per creare il vostro blocco:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Enable Block&lt;/strong&gt;: Per abilitare e disabilitare il blocco CMS (questa opzione è utile quando si vogliono creare dei blocchi CMS temporanei).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Block Title&lt;/strong&gt;: Il nome del blocco. Questo valore comparirà nella lista dei blocchi CMS selezionabili nelle categorie, quindi è meglio utilizzare dei nomi riconoscibili facilmente.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Identifier&lt;/strong&gt;: L’identificativo del blocco, deve avere un nome univoco e semplice da associare al quello che vogliamo realizzare nel sito. Questo parametro verrà utilizzato come richiamo del blocco CMS in pagine, file phtml o layout del sito.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Store View&lt;/strong&gt;: Seleziona la store view a cui vuoi associare il blocco CMS.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Content&lt;/strong&gt;: Il contenuto del blocco.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/magento2-come-creare-un-blocco-cms-03.jpg&quot; alt=&quot;Parametri da compilare per creare un blocco CMS in Magento 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dopo aver completato questi step è possibile richiamare il nostro blocco CMS nel frontend.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jun 2018 00:00:00 +0200</pubDate>
+        <link>https://andrearivadossi.it/blog//magento2/magento-2-come-creare-un-blocco-cms.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/blog//magento2/magento-2-come-creare-un-blocco-cms.html</guid>
+        
+        <category>front-end</category>
+        
+        <category>back-end</category>
+        
+        <category>cms</category>
+        
+        <category>Magento2</category>
+        
+        
+        <category>Magento2</category>
+        
+      </item>
+    
+  </channel>
+</rss>
