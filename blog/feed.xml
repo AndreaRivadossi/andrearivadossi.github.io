@@ -5,8 +5,8 @@
     <description>Magento Front-End Developer</description>
     <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/</link>
     <atom:link href="https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Apr 2021 12:24:50 +0200</pubDate>
-    <lastBuildDate>Wed, 21 Apr 2021 12:24:50 +0200</lastBuildDate>
+    <pubDate>Wed, 21 Apr 2021 12:27:11 +0200</pubDate>
+    <lastBuildDate>Wed, 21 Apr 2021 12:27:11 +0200</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -27,8 +27,7 @@
 
 &lt;p&gt;Non ho capito perché in questo caso le istruzioni utilizzate nei file di layout XML non funzionino, ma ho cercato di aggirare il problema assegnando la classe CSS di cui avevo bisogno al primo elemento disponibile che racchiuda tutta la struttura. Nello specifico mi sono aggrappato al container root, estendendolo e assegnandogli un tag html e la classe di cui avevo bisogno. In questo modo:&lt;/p&gt;
 
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/f03eba32d0fc8454c2c1b2897c8d6bca.js?file=Layout-Update-XML.xml&quot;&gt; &lt;/script&gt;
+&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/f03eba32d0fc8454c2c1b2897c8d6bca.js?file=Layout-Update-XML.xml&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Nell’esempio qui sopra potete vedere che con l’attributo &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlTag=&quot;div&quot;&lt;/code&gt; trasformo l’elemento in un div, con l’attributo &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlClass=&quot;my-custom-css-class&quot;&lt;/code&gt; gli assegno le classi di cui ho bisogno e, opzionale, posso assegnare un id con questo attributo &lt;code class=&quot;highlighter-rouge&quot;&gt;htmlId=&quot;my-custom-css-id&quot;&lt;/code&gt;.&lt;/p&gt;
 
