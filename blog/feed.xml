@@ -5,9 +5,69 @@
     <description>Magento Front-End Developer</description>
     <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/</link>
     <atom:link href="https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 21 Apr 2021 12:59:00 +0200</pubDate>
-    <lastBuildDate>Wed, 21 Apr 2021 12:59:00 +0200</lastBuildDate>
+    <pubDate>Mon, 03 May 2021 16:56:26 +0200</pubDate>
+    <lastBuildDate>Mon, 03 May 2021 16:56:26 +0200</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Trasferire file tra server</title>
+        <description>&lt;p&gt;Sicuramente vi sarà capitato di dover duplicare ambienti di sviluppo per collegi, collaboratori o per voi stessi oppure di dover trasferire i contenuti della media o il dump del DB aggiornato dalla produzione del sito a cui state lavorando.&lt;/p&gt;
+
+&lt;p&gt;Indipendentemente dalla piattaforma, io utilizzo questi 3 step:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Comprimo i file o la cartella che li contiene,&lt;/li&gt;
+  &lt;li&gt;Trasferisco la cartella zippata,&lt;/li&gt;
+  &lt;li&gt;Decomprimo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;comprimere&quot;&gt;Comprimere&lt;/h3&gt;
+&lt;p&gt;Per comprimere dei file o una cartella utilizzo il comando &lt;em&gt;zip&lt;/em&gt;, in questo modo:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;zip &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; nome-file-zippato.zip nome-cartella-da-zippare/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;trasferire&quot;&gt;Trasferire&lt;/h3&gt;
+
+&lt;p&gt;Principalmente utilizzo due metodi per trasferire i file.&lt;/p&gt;
+
+&lt;h4 id=&quot;wget&quot;&gt;WGET&lt;/h4&gt;
+
+&lt;p&gt;Utilizzare questo metodo se si ha il link diretto al file necessario, in questo modo:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://example.com/nome-file.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In caso la directory fosse protetta da password utilizzare questa sintassi:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; nome-utente &lt;span class=&quot;nt&quot;&gt;--password&lt;/span&gt; la-mia-password http://example.com/nome-file.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;scp&quot;&gt;SCP&lt;/h4&gt;
+
+&lt;p&gt;Utilizzare questo metodo se si hanno gli accessi SSH al server di destinazione.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp nome-file.zip nome-utente@ip-macchina:/percorso/di/destinazione/nel/server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dopo aver lanciato questo comando verrà richiesta la password, inseritela e inizierà il trasferimento.&lt;/p&gt;
+
+&lt;h3 id=&quot;decomprimere&quot;&gt;Decomprimere&lt;/h3&gt;
+
+&lt;p&gt;Per decomprimere la cartella basterà utilizzare il comando &lt;em&gt;unzip&lt;/em&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unzip nome-file-zippato.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 03 May 2021 00:00:00 +0200</pubDate>
+        <link>https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/procedure/trasferire-file-tra-server.html</link>
+        <guid isPermaLink="true">https://andrearivadossi.it/bloghttps://andrearivadossi.it/blog/procedure/trasferire-file-tra-server.html</guid>
+        
+        <category>server</category>
+        
+        
+        <category>Procedure</category>
+        
+      </item>
     
       <item>
         <title>Aggiungere una classe CSS al body</title>
