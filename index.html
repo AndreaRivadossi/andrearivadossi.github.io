@@ -1,137 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Andrea Rivadossi Photography</title>
-    <meta name="description" content="Andrea Rivadossi Photography Portfolio">
-    <meta name="author" content="Andrea Rivadossi">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="../images/favicon-photo.ico">
-    <link rel="author" type="text/plain" href="../humans.txt" />
-    <link rel="stylesheet" type="text/css" href="./icons/css/fontello.css">
-    <link href=" https://fonts.cdnfonts.com/css/futura-pt " rel="stylesheet">
-    <style type="text/css">
-        :root {
-            --darkblue: #272727;
-            --midblue: #009FB7;
-            --grayblue: #696773;
-            --lightgray: #EFF1F3;
-            --yellow: #FED766;
-            --white: #ffffff;
-            --main-bg-color: var(--white);
-            --main-text-color: var(--lightgray);
-            --main-a-color: var(--yellow);
-            --main-ahover-color: var(--midblue);
-            --main-socialbg-color: var(--lightgray);
-            --main-sociala-color: var(--darkblue);
-            --main-socialbghover-color: var(--yellow);
-            --main-socialahover-color: var(--darkblue);
-            --main-border-color: var(--grayblue);
-            --main-foot-color: var(--grayblue)
-        }
+  <meta charset="utf-8">
+  <title>Magento Front-End Developer - Andrea Rivadossi</title>
+  <meta name="description" content="Magento Front-End Developer">
+  <meta name="author" content="Andrea Rivadossi">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="author" type="text/plain" href="humans.txt" />
+  <link rel="stylesheet" type="text/css" href="./icons/css/fontello.css">
+  <!--<link rel="stylesheet" type="text/css" href="./css/styles.css">-->
+  <style type="text/css">:root{--darkblue:#272727;--midblue:#009FB7;--grayblue:#696773;--lightgray:#EFF1F3;--yellow:#FED766;--main-bg-color:var(--darkblue);--main-text-color:var(--lightgray);--main-a-color:var(--yellow);--main-ahover-color:var(--midblue);--main-socialbg-color:var(--lightgray);--main-sociala-color:var(--darkblue);--main-socialbghover-color:var(--yellow);--main-socialahover-color:var(--darkblue);--main-border-color:var(--grayblue);--main-foot-color:var(--grayblue)}*{margin:0;padding:0}body{margin:0;padding:0;background-color:var(--main-bg-color);font-family:"Lucida Console",Monaco,monospace;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{color:var(--main-a-color);transition:color .5s}a:hover{color:var(--main-ahover-color)}#primarybanner{position:relative;text-align:center;color:var(--main-text-color);width:100vw;height:100vh}#primarybanner .container{max-width:640px;width:90%;position:absolute;top:50%;left:50%;transform:translateX(-50%) translateY(-50%)}#primarybanner .container .column{padding:2em;border:.2em solid var(--main-border-color)}#primarybanner h4{font-size:3rem}#primarybanner p{padding:1em 0}.social{list-style:none;padding:1em 0 0}.social li{display:inline-block}.social li a{color:var(--main-sociala-color);background-color:var(--main-socialbg-color);display:block;width:32px;height:32px;line-height:32px;border-radius:50%;transition:background-color .5s}.social li a:hover{color:var(--main-socialahover-color);background-color:var(--main-socialbghover-color)}.copyright{color:var(--main-foot-color);font-size:12px;padding:1em 0}</style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 42px 0;
-            padding: 0;
-            background-color: var(--main-bg-color);
-            font-family: 'Futura PT', Monaco, monospace;
-            font-size: 16px;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-align: center;
-        }
-
-        .title {
-            font-size: 42px;
-        }
-
-        a {
-            color: var(--main-a-color);
-            transition: color .5s
-        }
-
-        a:hover {
-            color: var(--main-ahover-color)
-        }
-
-        .social {
-            list-style: none;
-            padding: 1em 0 0;
-        }
-
-        .social li {
-            display: inline-block
-        }
-
-        .social li a {
-            color: var(--main-sociala-color);
-            background-color: var(--main-socialbg-color);
-            display: block;
-            width: 32px;
-            height: 32px;
-            line-height: 32px;
-            border-radius: 50%;
-            transition: background-color .5s
-        }
-
-        .social li a:hover {
-            color: var(--main-socialahover-color);
-            background-color: var(--main-socialbghover-color)
-        }
-
-        .copyright {
-            color: var(--main-foot-color);
-            font-size: 12px;
-            padding: 1em 0
-        }
-
-        /*masonry*/
-        main.content {
-            column-count: 3;
-            column-gap: 12px;
-            max-width: 1400px;
-            margin: 42px auto;
-            padding: 0 20px;
-        }
-
-        article.post {
-            display: grid;
-            grid-template-rows: 1fr auto;
-            margin-bottom: 12px;
-            break-inside: avoid;
-        }
-
-        article.post img {
-            width: 100%;
-        }
-
-        article.post .body-text {
-            grid-row: 1 / -1;
-            grid-column: 1;
-        }
-
-        @media all and (max-width: 980px) {
-            main.content {
-                column-count: 2;
-            }
-        }
-
-        @media all and (max-width: 480px) {
-            main.content {
-                column-count: 1;
-            }
-        }
-
-    </style>
-
-    <script type="application/ld+json">
+  <script type="application/ld+json">
             {
               "@context": "http://schema.org",
               "@type": "Person",
@@ -150,48 +31,43 @@
             }
         </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21772022-10"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21772022-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'UA-21772022-10');
-    </script>
+    gtag('config', 'UA-21772022-10');
+  </script>
 </head>
-
 <body>
-    <h4 class="title">Andrea Rivadossi <br/>Photo</h4>
-    <p>Portfolio fotografico di Andrea Rivadossi</p>
 
-    <main role="main" class="content">
-        <article class="post">
-            <img src="https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s500x750/68f5f0269bebdd9dd5cb8cb2478e7114778d7fb3.jpg" srcset="https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s75x75_c1/b143ba546c911838b6f5cc5e435b9fda30fca865.jpg 75w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s100x200/a579599ed767fe7be2e2d371711eafc90c3e8387.jpg 100w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s250x400/040364f9744524ce197dd37d4117cda11baba0a8.jpg 250w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s400x600/5fa99d69c0b4c2b5f67ddd2fffc3f484d09c658f.jpg 400w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s500x750/68f5f0269bebdd9dd5cb8cb2478e7114778d7fb3.jpg 500w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s540x810/ac5fe1a121deb64e138aeb7b8d11a0a6e3b041ea.jpg 540w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s640x960/238a2659376174965d22f24a3804cd8d558788b3.jpg 640w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s1280x1920/3e5442602d8f83c1ba06031a000dd27ebb77c21a.jpg 1280w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s2048x3072/f4d726fc6f59ff464d482e2f1f73e67ce18e6736.jpg 2048w" sizes="(max-width: 1280px) 100vw, 1280px" alt="image">
-        </article>
-    </main>
-
-    <ul class="social">
-        <li><a href="https://www.instagram.com/theandreariva/" title="Instagram"><i class="demo-icon icon-instagram"></i></a></li>
-        <li><a href="https://it.linkedin.com/in/andrea-rivadossi-42a75b24" title="LinkedIn"><i class="demo-icon icon-linkedin"></i></a></li>
-        <li><a href="https://github.com/AndreaRivadossi" title="GitHub"><i class="demo-icon icon-github"></i></a></li>
-        <li><a href="https://twitter.com/theandreariva" title="Twitter"><i class="demo-icon icon-twitter"></i></a></li>
-    </ul>
-
-    <br/>
-
-    <a href="mailto:riva.andrea.web@gmail.com">riva.andrea.web@gmail.com</a>
-    <div class="copyright">Andrea Rivadossi © 2024 - All photos are mine</div>
-
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-        kofiWidgetOverlay.draw('theandreariva', {
-            'type': 'floating-chat',
-            'floating-chat.donateButton.text': 'Support me',
-            'floating-chat.donateButton.background-color': '#00b9fe',
-            'floating-chat.donateButton.text-color': '#fff'
-        });
-    </script>
+  <div id="primarybanner">
+    <div class="container">
+      <div class="column">
+        <h4>Andrea Rivadossi</h4>
+        <span>...</span>
+        <p>I usually do things with CSS, HTML, PHP, jQuery on Magento 1 & 2 for <a href="https://www.tunda.com/">@tundasrl</a>. Sometimes i do other stuff on Wordpress for <a href="https://www.nerdgames.it">@nerdgamesit</a>.</p>
+        <ul class="social">
+          <li><a href="https://it.linkedin.com/in/andrea-rivadossi-42a75b24" title="LinkedIn"><i class="demo-icon icon-linkedin"></i></a></li>
+          <li><a href="https://github.com/AndreaRivadossi" title="GitHub"><i class="demo-icon icon-github"></i></a></li>
+          <li><a href="https://twitter.com/theandreariva" title="Twitter"><i class="demo-icon icon-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/theandreariva/" title="Instagram"><i class="demo-icon icon-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="copyright">© 2023 Andrea Rivadossi</div>
+    </div>
+  </div>
+  
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('theandreariva', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
 </body>
-
 </html>
