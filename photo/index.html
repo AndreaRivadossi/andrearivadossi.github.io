@@ -9,8 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="../images/favicon-photo.ico">
     <link rel="author" type="text/plain" href="../humans.txt" />
-    <link rel="stylesheet" type="text/css" href="./icons/css/fontello.css">
-    <link href=" https://fonts.cdnfonts.com/css/futura-pt " rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../icons/css/fontello.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
     <style type="text/css">
         :root {
             --darkblue: #272727;
@@ -41,7 +46,7 @@
             margin: 42px 0;
             padding: 0;
             background-color: var(--main-bg-color);
-            font-family: 'Futura PT', Monaco, monospace;
+            font-family: "League Spartan", Monaco, monospace;
             font-size: 16px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -50,6 +55,24 @@
 
         .title {
             font-size: 42px;
+        }
+
+        .navigation {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .navigation li a {
+            padding: 1em;
+            display: block;
+        }
+
+        .navigation li a:hover {
+            text-decoration: underline;
+            cursor: pointer;
         }
 
         a {
@@ -86,6 +109,11 @@
             background-color: var(--main-socialbghover-color)
         }
 
+        [class^="icon-"]:before,
+        [class*=" icon-"]:before {
+            line-height: 32px;
+        }
+
         .copyright {
             color: var(--main-foot-color);
             font-size: 12px;
@@ -98,7 +126,7 @@
             column-gap: 12px;
             max-width: 1400px;
             margin: 42px auto;
-            padding: 0 20px;
+            padding: 0 1em;
         }
 
         article.post {
@@ -129,6 +157,43 @@
             }
         }
 
+        /* Contact */
+        main.contact {
+            max-width: 1400px;
+            margin: 42px auto;
+            padding: 0 1em;
+        }
+
+        main.contact ul {
+            list-style: none;
+        }
+
+        main.contact article {
+            margin-bottom: 42px;
+        }
+
+        main.contact h3 {
+            margin-bottom: 1em;
+        }
+
+        .publications a {
+            color: var(--main-ahover-color)
+        }
+
+        .publications a:hover {
+            color: var(--main-a-color);
+        }
+
+        @media all and (min-width: 980px) {
+            main.contact {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            main.contact article {
+                width: calc(100% / 3);
+            }
+        }
     </style>
 
     <script type="application/ld+json">
@@ -156,32 +221,153 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-21772022-10');
     </script>
 </head>
 
 <body>
-    <h4 class="title">Andrea Rivadossi <br/>Photo</h4>
+    <h4 class="title">Andrea Rivadossi <br />Photo</h4>
     <p>Portfolio fotografico di Andrea Rivadossi</p>
 
-    <main role="main" class="content">
-        <article class="post">
-            <img src="https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s500x750/68f5f0269bebdd9dd5cb8cb2478e7114778d7fb3.jpg" srcset="https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s75x75_c1/b143ba546c911838b6f5cc5e435b9fda30fca865.jpg 75w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s100x200/a579599ed767fe7be2e2d371711eafc90c3e8387.jpg 100w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s250x400/040364f9744524ce197dd37d4117cda11baba0a8.jpg 250w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s400x600/5fa99d69c0b4c2b5f67ddd2fffc3f484d09c658f.jpg 400w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s500x750/68f5f0269bebdd9dd5cb8cb2478e7114778d7fb3.jpg 500w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s540x810/ac5fe1a121deb64e138aeb7b8d11a0a6e3b041ea.jpg 540w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s640x960/238a2659376174965d22f24a3804cd8d558788b3.jpg 640w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s1280x1920/3e5442602d8f83c1ba06031a000dd27ebb77c21a.jpg 1280w, https://64.media.tumblr.com/bdf2ec3f89e8faff0b5a1398fab82a9c/aa49fa9ab83d5360-0d/s2048x3072/f4d726fc6f59ff464d482e2f1f73e67ce18e6736.jpg 2048w" sizes="(max-width: 1280px) 100vw, 1280px" alt="image">
+    <ul class="navigation">
+        <li id="live"><a>Music</a></li>
+        <li id="live"><a>Portrait/Bts</a></li>
+        <!--<li id="live"><a>Events</a></li>-->
+        <li><a href="#contact">Info/Contact</a></li>
+    </ul>
+
+    <main role="main" class="content" id="main-portfolio">
+    </main>
+
+    <main role="contact" class="contact" id="contact">
+        <article>
+            <h3>Contact</h3>
+            <ul>
+                <li>Based in Milan, Italy</li>
+                <li><a href="mailto:riva.andrea.web@gmail.com">riva.andrea.web@gmail.com</a></li>
+                <li>
+                    <ul class="social">
+                        <li><a href="https://www.instagram.com/theandreariva/" title="Instagram"><i
+                                    class="demo-icon icon-instagram"></i></a></li>
+                        <li><a href="https://it.linkedin.com/in/andrea-rivadossi-42a75b24" title="LinkedIn"><i
+                                    class="demo-icon icon-linkedin"></i></a></li>
+                        <li><a href="https://github.com/AndreaRivadossi" title="GitHub"><i
+                                    class="demo-icon icon-github"></i></a></li>
+                        <li><a href="https://twitter.com/theandreariva" title="Twitter"><i
+                                    class="demo-icon icon-twitter"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <article class="publications">
+            <h3>Publications</h3>
+            <ul>
+                <li><a href="https://doomed-nation.com/doomed-confessionary-e-chains-chains/" target="_blank">Doomed
+                        Confessionary: E. Chains (Chains) - doomed-nation.com</a></li>
+                <li><a href="https://www.punkadeka.it/i-locali-punk-da-conoscere-in-italia-bloom-dalle-origini-ad-oggi-lo-spirito-continua/"
+                        target="_blank">I locali punk da conoscere in Italia, BLOOM ... - punkadeka.it</a></li>
+                <li><a href="https://www.rockit.it/articolo/uragano-sanremo" target="_blank">Uragano su Sanremo -
+                        rockit.it</a></li>
+            </ul>
+        </article>
+        <article>
+            <h3>Collaboration</h3>
+            <ul>
+                <li>Bloom Mezzago</li>
+                <li>TBA Magazine</li>
+                <li>Solidar Rock</li>
+                <li>Container</li>
+                <li>DNR Music Agency</li>
+            </ul>
         </article>
     </main>
 
-    <ul class="social">
-        <li><a href="https://www.instagram.com/theandreariva/" title="Instagram"><i class="demo-icon icon-instagram"></i></a></li>
-        <li><a href="https://it.linkedin.com/in/andrea-rivadossi-42a75b24" title="LinkedIn"><i class="demo-icon icon-linkedin"></i></a></li>
-        <li><a href="https://github.com/AndreaRivadossi" title="GitHub"><i class="demo-icon icon-github"></i></a></li>
-        <li><a href="https://twitter.com/theandreariva" title="Twitter"><i class="demo-icon icon-twitter"></i></a></li>
-    </ul>
+    <br />
 
-    <br/>
-
-    <a href="mailto:riva.andrea.web@gmail.com">riva.andrea.web@gmail.com</a>
     <div class="copyright">Andrea Rivadossi © 2024 - All photos are mine</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var urldata = [
+                {
+                    "url": "/photos/hd-ARW01093-ARW.jpg",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "/photos/hd-ARW01093-ARW.jpg",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "/photos/hd-ARW01093-ARW.jpg",
+                    "alt": "",
+                    "class": "live"
+                }/*,
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                },
+                {
+                    "url": "http://www.ducksters.com/graphics/student.png",
+                    "alt": "",
+                    "class": "live"
+                }*/
+            ];
+            $.each(urldata, function (index, value) {
+                $("#main-portfolio").append("<article class='post " + value.class + "'><img src='" + value.url + "' alt='" + value.alt + "' /></article>")
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        /* Random color script for description and titles on images */
+        /*var colors = ['#ff0000', '#00ff00', '#0000ff','#ffff00', '#00ffff', '#ff00ff'];
+
+        var text=document.getElementsByTagName('p');
+        for(i=0;i<text.length;i++){
+            var random_color = colors[Math.floor(Math.random() * colors.length)];
+            text[i].setAttribute("style","color:"+random_color);
+        }*/
+    </script>
 
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
     <script>
