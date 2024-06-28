@@ -352,7 +352,7 @@
                 }
             ];
             $.each(urldata, function (index, value) {
-                $("#main-portfolio").append("<article class='post " + value.class + "'><img src='" + value.url + "' alt='" + value.alt + "' /></article>")
+                $("#main-portfolio").append("<article class='post " + value.class + "'><img loading='lazy' src='" + value.url + "' alt='" + value.alt + "' /></article>")
             });
 
         });
