@@ -297,63 +297,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            /* Larghezza img 600px */
             /* Usa il comando "tree -J > output.json" nella cartella delle immagini per generare il json aggiornato e non impazzire. */
+            /* Usa il comando " cmd //c tree //a //f " nella cartella delle immagini per generare la lista dei files. */
             var urldata = [
-                { "type": "file", "name": "ig-ARW04896-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW08733-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW00758-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW09451-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW04525-ARW (2)-prw.jpg" },
-                { "type": "file", "name": "39-prw.jpg" },
-                { "type": "file", "name": "hd-ARW04179-ARW-prw.jpg" },
-                { "type": "file", "name": "hd-ARW04899-prw.jpg" },
-                { "type": "file", "name": "hd-ARW09662-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW01044-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW01093-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW01387-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW01504-ARW_DxO_DeepPRIME-prw.jpg" },
-                { "type": "file", "name": "ig-ARW02235-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW02575-prw.jpg" },
-                { "type": "file", "name": "ig-ARW01198-ARW_DxO_DeepPRIME-prw.jpg" },
-                { "type": "file", "name": "ig-ARW02671-ARW-3-prw.jpg" },
-                { "type": "file", "name": "ig-ARW02725-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW03777-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW04042-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW04101-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW04559-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW04646-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW04956-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW05166-prw.jpg" },
-                { "type": "file", "name": "07-prw.jpg" },
-                { "type": "file", "name": "38insta-DSC07314-prw.jpg" },
-                { "type": "file", "name": "ig-ARW07809-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW05566-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW05700-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW05939-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW06167-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW06466-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW06518-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW06885-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW07728-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW07872-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW08385-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW08521-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW08723-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW08789-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW09175-ARW-prw.jpg" },
-                { "type": "file", "name": "04insta-DSCF1542-prw.jpg" },
-                { "type": "file", "name": "ig-ARW09370-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW09742-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-DSC00755-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-ARW02981-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-DSC03653-prw.jpg" },
-                { "type": "file", "name": "ig-DSC03731-prw.jpg" },
-                { "type": "file", "name": "hd-ARW04183-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-DSC04050-2-prw.jpg" },
-                { "type": "file", "name": "ig-ARW07393-ARW-prw.jpg" },
-                { "type": "file", "name": "ig-DSC04853-prw.jpg" },
-                { "type": "file", "name": "ig-DSC06052-prw.jpg" },
-                { "type": "file", "name": "ig-DSC08116-prw.jpg" }
+                { "name": "ig-ARW04896-ARW-prw.jpg" },
+                { "name": "04insta-DSCF1542-prw.jpg" },
+                { "name": "07-prw.jpg" },
+                { "name": "38insta-DSC07314-prw.jpg" },
+                { "name": "39-prw.jpg" },
+                { "name": "hd-ARW04181-ARW-prw.jpg" },
+                { "name": "hd-ARW04183-ARW-prw.jpg" },
+                { "name": "hd-ARW04899-prw.jpg" },
+                { "name": "hd-ARW09662-ARW-prw.jpg" },
+                { "name": "ig-ARW00758-ARW-prw.jpg" },
+                { "name": "ig-ARW01044-ARW-prw.jpg" },
+                { "name": "ig-ARW01093-ARW-prw.jpg" },
+                { "name": "ig-ARW01198-ARW_DxO_DeepPRIME-prw.jpg" },
+                { "name": "ig-ARW01387-ARW-prw.jpg" },
+                { "name": "ig-ARW01504-ARW_DxO_DeepPRIME-prw.jpg" },
+                { "name": "ig-ARW02235-ARW-prw.jpg" },
+                { "name": "ig-ARW02575-prw.jpg" },
+                { "name": "ig-ARW02671-ARW-3-prw.jpg" },
+                { "name": "ig-ARW02725-ARW-prw.jpg" },
+                { "name": "ig-ARW02981-ARW-prw.jpg" },
+                { "name": "ig-ARW03777-ARW-prw.jpg" },
+                { "name": "ig-ARW04042-ARW-prw.jpg" },
+                { "name": "ig-ARW04101-ARW-prw.jpg" },
+                { "name": "ig-ARW04525-ARW (2)-prw.jpg" },
+                { "name": "ig-ARW04559-ARW-prw.jpg" },
+                { "name": "ig-ARW04646-ARW-prw.jpg" },
+                { "name": "ig-ARW04896-ARW-prw.jpg" },
+                { "name": "ig-ARW04956-ARW-prw.jpg" },
+                { "name": "ig-ARW05166-prw.jpg" },
+                { "name": "ig-ARW05566-ARW-prw.jpg" },
+                { "name": "ig-ARW05700-ARW-prw.jpg" },
+                { "name": "ig-ARW05939-ARW-prw.jpg" },
+                { "name": "ig-ARW06167-ARW-prw.jpg" },
+                { "name": "ig-ARW06466-ARW-prw.jpg" },
+                { "name": "ig-ARW06518-ARW-prw.jpg" },
+                { "name": "ig-ARW06885-ARW-prw.jpg" },
+                { "name": "ig-ARW07393-ARW-prw.jpg" },
+                { "name": "ig-ARW07728-ARW-prw.jpg" },
+                { "name": "ig-ARW07809-ARW-prw.jpg" },
+                { "name": "ig-ARW07872-ARW-prw.jpg" },
+                { "name": "ig-ARW08385-ARW-prw.jpg" },
+                { "name": "ig-ARW08521-ARW-prw.jpg" },
+                { "name": "ig-ARW08723-ARW-prw.jpg" },
+                { "name": "ig-ARW08733-ARW-prw.jpg" },
+                { "name": "ig-ARW08789-ARW-prw.jpg" },
+                { "name": "ig-ARW09175-ARW-prw.jpg" },
+                { "name": "ig-ARW09370-ARW-prw.jpg" },
+                { "name": "ig-ARW09451-ARW-prw.jpg" },
+                { "name": "ig-ARW09742-ARW-prw.jpg" },
+                { "name": "ig-DSC00755-ARW-prw.jpg" },
+                { "name": "ig-DSC03653-prw.jpg" },
+                { "name": "ig-DSC03731-prw.jpg" },
+                { "name": "ig-DSC04050-2-prw.jpg" },
+                { "name": "ig-DSC04853-prw.jpg" },
+                { "name": "ig-DSC06052-prw.jpg" },
+                { "name": "ig-DSC08116-prw.jpg" }
             ];
 
             $.each(urldata, function (index, value) {
@@ -366,10 +369,10 @@
     <script type="text/javascript">
         // Random colors for links in footer
         $(document).ready(function () {
-            var colors = ['#ff0000', '#00ff00', '#0000ff','#ffff00', '#00ffff', '#ff00ff', '#009FB7', '#FED766'];
-            $('.collaborations a').each(function(){
+            var colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#00ffff', '#ff00ff', '#009FB7', '#FED766'];
+            $('.collaborations a').each(function () {
                 var rand = colors[Math.floor(Math.random() * colors.length)];
-                $(this).css('color',rand);
+                $(this).css('color', rand);
             });
         })
     </script>
