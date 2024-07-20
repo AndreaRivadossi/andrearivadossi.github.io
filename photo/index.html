@@ -136,7 +136,8 @@
         }
 
         article.post img {
-            width: 100%;
+            width: 100% !important;
+            height: auto !important;
         }
 
         article.post .body-text {
@@ -356,7 +357,7 @@
             ];
 
             $.each(urldata, function (index, value) {
-                $("#main-portfolio").append("<article class='post'><img loading='lazy' src='https://www.andrearivadossi.it/photo/images/" + value.name + "' alt='" + value.name + "' /></article>")
+                $("#main-portfolio").append("<article class='post'><img loading='lazy' src='https://www.andrearivadossi.it/photo/images/" + value.name + "' alt='" + value.name + "' width='459' height='689' /></article>")
             });
 
         });
